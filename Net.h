@@ -711,13 +711,6 @@ namespace net
 		}
 
 		// utility functions
-
-    /*
-		static bool sequence_more_recent( unsigned int s1, unsigned int s2, unsigned int max_sequence )
-		{
-			return ( s1 > s2 ) && ( s1 - s2 <= max_sequence/2 ) || ( s2 > s1 ) && ( s2 - s1 > max_sequence/2 );
-		}
-    */
 		
 		static int bit_index_for_sequence( unsigned int sequence, unsigned int ack, unsigned int max_sequence )
 		{
@@ -972,7 +965,7 @@ namespace net
 			}
 			#endif
 			const int header = 12;
-			unsigned char packet[272];	// Note: This was originally coded for gcc and used "size+4" but VS is not a fan of dynamic arrays
+			unsigned char packet[272];	// Note: This was originally coded for gcc and used "size+4" but VS is not a fan of variable-sized arrays
 			unsigned int seq = reliabilitySystem.GetLocalSequence();
 			unsigned int ack = reliabilitySystem.GetRemoteSequence();
 			unsigned int ack_bits = reliabilitySystem.GenerateAckBits();

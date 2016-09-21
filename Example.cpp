@@ -5,7 +5,7 @@
 	Author: Glenn Fiedler <gaffer@gaffer.org>
 	
 	Extended for:
-	Startup Slam 3.0
+	Startup Slam 3.0 - http://www.startupslam.io/
 	Author: Dylan Gedig, <dylan@rednexusgames.com>
 */
 

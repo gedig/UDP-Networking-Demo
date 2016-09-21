@@ -1,6 +1,6 @@
 # makefile for macosx
 
-flags = -Wall -DDEBUG -std=c++1y -lws2_32 # -O3
+flags = -Wall -DDEBUG -std=c++14 # -O3
 
 % : %.cpp Net.h
 	g++ $< -o $@ ${flags}
