@@ -5,10 +5,7 @@ flags = -Wall -DDEBUG -std=c++14 # -O3
 % : %.cpp Net.h
 	g++ $< -o $@ ${flags}
 
-all : Example Test
-
-test : Test
-	./Test
+all : Example
 	
 server : Example
 	./Example
